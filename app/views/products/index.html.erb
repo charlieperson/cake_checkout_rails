@@ -3,6 +3,7 @@
     <%= product.name %>
     <%= product.code %>
     <%= product.price %>
+    <%= link_to 'Add to cart', cart_path(product), method: :put %>
   <% end %>
 <% else %>
   No products in stock
