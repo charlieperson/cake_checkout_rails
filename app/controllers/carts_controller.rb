@@ -6,6 +6,6 @@ class CartsController < ApplicationController
       @cart = Cart.create
     end
     @cart.product_id = params[:product]
-    @products = @cart.product_id.all
+    @products = @cart.product_id
   end
 end
